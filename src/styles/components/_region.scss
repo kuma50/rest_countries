@@ -1,0 +1,57 @@
+.regionContainer {
+  height: 48px;
+  width: 75%;
+  border-radius: 5px;
+  background: var(--bg-secondary);
+
+  @media (min-width: 1280px) {
+    height: 56px;
+    width: 100%;
+  }
+  .dropdown {
+    display: grid;
+    gap: 0.75rem;
+
+    @media (min-width: 1280px) {
+      gap: 16px;
+    }
+
+    &-toggle {
+      width: 100%;
+      padding: 16px 32px;
+
+      border-radius: 5px;
+      background: inherit;
+      border: none;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media (min-width: 1280px) {
+        padding: 18px 24px;
+      }
+
+      > span {
+        font-size: var(--font-xxs);
+      }
+    }
+    &-menu {
+      width: 100%;
+      padding: 16px 32px;
+
+      border-radius: 5px;
+      background: var(--bg-secondary);
+      z-index: 999;
+      transition: 0.3s ease-in-out;
+
+      display: grid;
+      gap: 8px;
+
+      &--item {
+        padding-block: 0.25rem;
+        font-size: var(--font-xxs);
+      }
+    }
+  }
+}

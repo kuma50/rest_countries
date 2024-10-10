@@ -1,0 +1,21 @@
+:root {
+  --bg-primary: #f2f2f2;
+  --bg-secondary: #ffffff;
+  --text-primary: #111517;
+  --text-secondary: #848484;
+  --bg-gray: #979797;
+}
+
+.light-mode {
+  --bg-primary: #f2f2f2;
+  --bg-secondary: #ffffff;
+  --text-primary: #111517;
+  --text-secondary: #848484;
+}
+
+.dark-mode {
+  --bg-primary: #202c36;
+  --bg-secondary: #2b3844;
+  --text-primary: #ffffff;
+  --text-secondary: #848484;
+}

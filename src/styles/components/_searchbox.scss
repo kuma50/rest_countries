@@ -1,0 +1,35 @@
+.searchContainer {
+  height: 48px;
+
+  .searchBox {
+    width: 100%;
+    background: var(--bg-secondary);
+
+    padding: 16px 32px;
+    border-radius: 5px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 16px;
+
+    svg {
+      stroke: var(--bg-gray);
+    }
+
+    input {
+      height: 20px;
+      border: none;
+      flex: 1;
+      padding-block: 8px;
+
+      &::placeholder {
+        color: var(--text-secondary);
+      }
+
+      &:focus-visible {
+        outline: none;
+      }
+    }
+  }
+}

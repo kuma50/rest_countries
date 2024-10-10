@@ -1,0 +1,57 @@
+.header {
+  --height: 80px;
+  // width: 100%;
+  height: var(--height);
+  background: var(--bg-secondary);
+  // background-color: green;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &.wrapper {
+    width: 100%;
+    padding-inline: 16px;
+
+    @media (min-width: 1280px) {
+      // max-width: 1280px;
+      // margin-inline: auto;
+      padding: 24px 80px;
+    }
+  }
+
+  &__title {
+    font-size: var(--font-xl);
+    font-weight: var(--font-bold);
+
+    @media (width < 468px) {
+      font-size: var(--font-xs);
+    }
+  }
+
+  &__theme-switcher {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    &__icon {
+      width: 16px;
+      height: 16px;
+    }
+
+    &__name {
+      font-size: var(--font-s);
+      font-weight: var(--font-bold);
+
+      @media (width < 468px) {
+        font-size: var(--font-xxs);
+        font-weight: var(--font-semibold);
+      }
+    }
+
+    &--dark-mode {
+      color: var(--dark-mode-text-color); // Modifier for dark mode
+    }
+  }
+}
