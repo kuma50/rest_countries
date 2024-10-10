@@ -5,43 +5,51 @@
   gap: 40px;
 
   @media (min-width: 1280px) {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 75px;
     row-gap: 75px;
   }
 
   @media (min-width: 768px) and (max-width: 1279px) {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   @media (min-width: 478px) and (max-width: 767px) {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
+
   &.wrapper {
     width: 100%;
     padding-inline: 16px;
 
-    @media (min-width: 1280px) {
+    @media (min-width: 1280px) and (max-width: 1439px) {
       // max-width: 1280px;
       // margin-inline: auto;
       padding-inline: 80px;
     }
+
+    @media (min-width: 1440px) {
+      max-width: 1280px;
+      margin-inline: auto;
+      padding: 16px;
+    }
   }
+
   .country {
-    max-width: 264px;
-    width: 100%;
+    max-width: 100%;
+    width: 264px;
     background: var(--bg-secondary);
 
-    // display: grid;
+    display: grid;
 
     &__flag {
       width: 100%;
+      height: 160px;
       object-fit: cover;
-      background-color: black;
-      height: auto;
     }
 
     &__info {
+      width: 100%;
       padding: 24px;
       display: grid;
       gap: 16px;
